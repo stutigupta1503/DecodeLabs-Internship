@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stuti Gupta — Full Stack Developer</title>
+<meta name="description" content="Portfolio of Stuti Gupta, Full Stack Developer. HTML, CSS, JavaScript, Node, Express, MongoDB.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="wrap">
+    <a href="#top" class="logo">SG</a>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navlinks">
+      <span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap" style="border-top:none;">
+    
+    <h1>Stuti Gupta<br><span>Full Stack Developer</span></h1>
+    <p class="role">I build things that go from a browser click to a database row and back — CRUD apps, clones, and the occasional cloud deploy, while learning React one component at a time.</p>
+    <div class="meta">
+      <span>CSE, R.D. Engineering College · Class of 2027</span>
+      <span>SGPA 8.44</span>
+      <span>Based in India</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#projects">View projects</a>
+      <a class="btn btn-ghost" href="https://github.com/stutigupta1503" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <p class="eyebrow">// about</p>
+      <h2>Currently: student, developer, occasional hackathon entrant.</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a Computer Science undergrad at <strong>R.D. Engineering College</strong>, mostly found building small full-stack apps to understand how the pieces actually connect — frontend forms, Express routes, MongoDB collections, and (sometimes) an AWS server that keeps it all running.</p>
+          <p>Outside of coursework, I was <strong>Media Head at Nexora Society</strong> (then affiliated with R.D. Engineering College) and ran a web development session there in 2025. I was also selected for the internal round of <strong>Smart India Hackathon 2025</strong>, building a dashboard for a Smart Traffic Management System.</p>
+          <p>Right now I'm pushing into React and backend architecture — building a book store app in React and a mobile store with a Node/Express/MongoDB backend.</p>
+        </div>
+        <ul class="edu-list reveal">
+          <li>
+            <div class="row"><span class="school">B.Tech CSE — R.D. Engineering College</span><span class="score">8.44 SGPA</span></div>
+            <div class="sub">Expected 2027</div>
+          </li>
+          <li>
+            <div class="row"><span class="school">XII, CBSE — Krishna Vidya Niketan School</span><span class="score">95.8%</span></div>
+            <div class="sub">2023</div>
+          </li>
+          <li>
+            <div class="row"><span class="school">X, CBSE — Krishna Vidya Niketan School</span><span class="score">92.2%</span></div>
+            <div class="sub">2021</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <p class="eyebrow">// stack</p>
+      <h2>What I build with</h2>
+      <div class="skill-groups">
+        <div class="skill-card reveal">
+          <h3>Frontend</h3>
+          <div class="chip-row">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip learning">React</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Backend</h3>
+          <div class="chip-row">
+            <span class="chip">Node.js</span>
+            <span class="chip">Express</span>
+            <span class="chip">EJS</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Data</h3>
+          <div class="chip-row">
+            <span class="chip">MongoDB</span>
+            <span class="chip">SQL</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Languages &amp; Cloud</h3>
+          <div class="chip-row">
+            <span class="chip">Java</span>
+            <span class="chip">AWS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="log-header">
+        <div>
+          <p class="eyebrow">// build log</p>
+          <h2>Projects</h2>
+        </div>
+        <a class="gh-link" href="https://github.com/stutigupta1503" target="_blank" rel="noopener">see all repos on GitHub →</a>
+      </div>
+
+      <div class="log">
+        <article class="commit reveal">
+          <span class="hash">a1c93f</span>
+          <div class="body">
+            <h3>Student Record Manager</h3>
+            <p>Full CRUD app to add, list, and delete student records, with data persisted to MongoDB and deployed live on AWS.</p>
+            <div class="stack-row"><span>EJS</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>AWS</span></div>
+          </div>
+          <span class="status deployed">Deployed</span>
+        </article>
+
+        <article class="commit reveal">
+          <span class="hash">7e2d10</span>
+          <div class="body">
+            <h3>E-Commerce Website</h3>
+            <p>A storefront-style site with product listings and a browsing flow, built to practice layout and interactivity end to end.</p>
+            <div class="stack-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+          <span class="status complete">Complete</span>
+        </article>
+
+        <article class="commit reveal">
+          <span class="hash">4b8a7c</span>
+          <div class="body">
+            <h3>Spotify Clone</h3>
+            <p>UI recreation of Spotify's web player, focused on matching layout, spacing, and visual detail with plain CSS.</p>
+            <div class="stack-row"><span>HTML</span><span>CSS</span></div>
+          </div>
+          <span class="status complete">Complete</span>
+        </article>
+
+        <article class="commit reveal">
+          <span class="hash">0f61e5</span>
+          <div class="body">
+            <h3>Todo List App</h3>
+            <p>Add, complete, and remove tasks — a small state-management exercise in plain JavaScript.</p>
+            <div class="stack-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+          <span class="status complete">Complete</span>
+        </article>
+
+        <article class="commit reveal">
+          <span class="hash">c3d492</span>
+          <div class="body">
+            <h3>Book Store</h3>
+            <p>A React rebuild of an e-commerce-style catalog — my first real project applying components and state in React.</p>
+            <div class="stack-row"><span>React</span></div>
+          </div>
+          <span class="status progress">In progress</span>
+        </article>
+
+        <article class="commit reveal">
+          <span class="hash">9a5f21</span>
+          <div class="body">
+            <h3>Mobile Store</h3>
+            <p>Mobile phone storefront with a proper backend — Express API routes talking to a MongoDB database.</p>
+            <div class="stack-row"><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+          </div>
+          <span class="status progress">In progress</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="wrap">
+      <p class="eyebrow">// beyond code</p>
+      <h2>Achievements &amp; involvement</h2>
+      <div class="ach-grid">
+        <div class="ach-card reveal">
+          <span class="tag">Certification</span>
+          <h3>Elite NPTEL — Programming in Java</h3>
+          <p>IIT Kharagpur · 79% (Elite category) across a 12-week course covering advanced Java and OOP concepts.</p>
+        </div>
+        <div class="ach-card reveal">
+          <span class="tag">Hackathon</span>
+          <h3>Smart India Hackathon 2025</h3>
+          <p>Selected for the internal round; built a dashboard for a Smart Traffic Management System.</p>
+        </div>
+        <div class="ach-card reveal">
+          <span class="tag">Leadership</span>
+          <h3>Media Head, Nexora Society</h3>
+          <p>2025 · Ran a web development session for fellow students at R.D. Engineering College.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <p class="eyebrow">// contact</p>
+      <h2>Let's build something</h2>
+      <p class="lead">Open to internships, collaborations, or just talking through a gnarly bug. Reach out on whichever of these you check most.</p>
+      <div class="contact-links">
+        <a href="mailto:stutigupta1503@gmail.com">✉ stutigupta1503@gmail.com</a>
+        <a href="https://www.linkedin.com/in/stuti-gupta1503/" target="_blank" rel="noopener">in/ LinkedIn</a>
+        <a href="https://github.com/stutigupta1503" target="_blank" rel="noopener">⌥ GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>© 2026 Stuti Gupta</span>
+  <span>Built with HTML, CSS &amp; vanilla JS</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
