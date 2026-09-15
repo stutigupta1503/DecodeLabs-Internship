@@ -1,0 +1,45 @@
+<%- include('./base/header.ejs') %>
+    <div class="container">
+        <div class="alert bg-success my-3">
+            <h4 class="text-center text-white">Edit Student</h4>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <form action="/edit/student/<%= student._id%>" method="post">
+                    <div>
+                        <label class="form-label">Roll No</label>
+                        <input type="text" class="form-control" name="rollno" placeholder="Enter Roll No" value="<%= student.rollno %>">
+                    </div>
+                    <div class="mt-1">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" name="studentName" placeholder="Enter Name" value="<%= student.studentName %>">
+                    </div>
+                    <div class="mt-1">
+                        <label class="form-label">Father's Name</label>
+                        <input type="text" class="form-control" name="fatherName" placeholder="Enter Father's Name" value="<%= student.fatherName %>">
+                    </div>
+                    <div class="mt-1">
+                        <label class="form-label">Aadhar Card No</label>
+                        <input type="text" class="form-control" name="aadharCardNo" placeholder="Enter Aadhar Card No" value="<%= student.aadharCardNo %>">
+                    </div>
+                    <div class="mt-1">
+                        <label class="form-label">Mobile No</label>
+                        <input type="text" class="form-control" name="mobileNo" placeholder="Enter Mobile No" value="<%= student.mobileNo %>">
+                    </div>
+                    
+                    <input type="submit" class="btn btn-success mt-2" value="Edit Student"> 
+                    <a href="/students" class="btn btn-danger">Cancel</a>
+                
+                </form>
+            </div>
+             
+            <div class="col"></div>
+        </div>
+    </div>
+<%- include('./base/footer.ejs') %>
+
+
+<!-- https://www.smartprix.com/mobiles -->

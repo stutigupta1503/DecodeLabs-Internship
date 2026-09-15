@@ -1,0 +1,52 @@
+<%- include('./base/header.ejs') %>
+    <div class="container">
+        <div class="row mt-1" >
+            <h2 class="text-center text-danger">List of Students</h2>
+            <table class="table text-center">
+                <tr>
+                    <th>
+                        Roll No
+                    </th>
+                    <th>
+                        Student's Name
+                    </th>
+                    <th>
+                        Father's Name
+                    </th>
+                    <th>
+                        Aadhar Card No
+                    </th>
+                    <th>
+                        Mobile No
+                    </th>
+                    <th>
+                        Actions
+                    </th>
+                </tr>
+                <% students.forEach((student)=> { %>
+                    <tr>
+                        <td>
+                            <%= student.rollno    %>
+                        </td>
+                        <td>
+                            <%= student.studentName    %>
+                        </td>
+                        <td>
+                            <%= student.fatherName  %>
+                        </td>
+                        <td>
+                            <%= student.aadharCardNo    %>
+                        </td>
+                        <td>
+                            <%= student.mobileNo   %>
+                        </td>
+                        <td>
+                            <a href='/student/edit/page/<%= student._id%>' class="btn btn-primary">Edit</a>
+                            <a href="/student/delete/page/<%= student._id%>" class="btn btn-danger" onclick=" return confirm('Are you sure?')">Delete</a>
+                        </td>
+                    </tr>
+                <% }) %>
+            </table>
+        </div>
+    </div>
+<%- include('./base/footer.ejs') %>
