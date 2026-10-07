@@ -12,6 +12,12 @@ A simple Student Management System built using **Node.js, Express.js, EJS, and M
 - EJS-based user interface
 - Express.js routing
 
+## Project Preview
+
+![Project Preview](./images/preview.png)
+
+![List of Students](./images/List-of-Students.png)
+
 ## Tech Stack
 
 - Node.js
@@ -24,14 +30,30 @@ A simple Student Management System built using **Node.js, Express.js, EJS, and M
 - JavaScript
 
 ## Project Structure
-
 ```text
 Student Management System/
 │
 ├── models/
+│   └── Student.js
 ├── routes/
+│   └── student.js
+│
+├── controllers/
+│   └── StudentController.js
+│
 ├── views/
+│   └── base/
+│       ├── home.ejs
+│       ├── studentEditPage.ejs
+│       ├── studentList.ejs
+│       └── addStudentSuccess.ejs
+│
 ├── public/
+│
+├── images/
+│   ├── preview.png
+│   └── list-of-students.png
+│
 ├── index.js
 ├── package.json
 └── README.md
